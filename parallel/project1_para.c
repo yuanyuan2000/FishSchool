@@ -2,96 +2,111 @@
 #include <stdlib.h>
 #include <math.h>
 #include <time.h>
-#include <omp.h> // include OpenMP header
+#include <omp.h> // Include the OpenMP header
 
-#define NUM_FISH 100000
-#define LAKE_SIZE 1000
+#define NUM_FISH 8388608
+#define MAX_FISH_X 100
+#define MAX_FISH_Y 100
+#define MIN_FISH_X -MAX_FISH_X
+#define MIN_FISH_Y -MAX_FISH_Y
 #define INIT_WEIGHT 10
-#define NUM_THREADS 4
-
-struct Fish {
+#define SIMULATION_STEPS 500
+#define MAX_THREAD 64
+struct Fish
+{
     float x;
     float y;
-    float old_x;
-    float old_y;
+    float plan_x;
+    float plan_y;
     float weight;
+    float delta_f;
 };
 
-float calculate_distance(float x, float y) {
-    return sqrt(x * x + y * y);
-}
+int main()
+{
+    omp_set_num_threads(MAX_THREAD); // Set the number of threads
 
-void swim(struct Fish* fish) {
-    fish->old_x = fish->x;
-    fish->old_y = fish->y;
-    fish->x += ((float) rand() / RAND_MAX) * 0.1;
-    fish->y += ((float) rand() / RAND_MAX) * 0.1;
-}
-
-int main() {
     FILE *fp;
     fp = fopen("results1.txt", "w");
+    srand(time(0));
 
-    // Setting the number of threads
-    omp_set_num_threads(NUM_THREADS);
+    struct Fish *fishes = (struct Fish *)malloc(sizeof(struct Fish) * NUM_FISH);
 
-    for(int SIMULATION_STEPS = 10; SIMULATION_STEPS <= 100; SIMULATION_STEPS += 10) {
-        struct Fish fishes[NUM_FISH];
-        float barycentre;
-        int t, i;
+// Init fish position and weight
+#pragma omp parallel for
+    for (int i = 0; i < NUM_FISH; i++)
+    {
+        unsigned int seed = omp_get_thread_num(); // Get unique seed for each thread
+        fishes[i].x = (rand_r(&seed) % (2 * MAX_FISH_X + 1)) - MAX_FISH_X;
+        fishes[i].y = (rand_r(&seed) % (2 * MAX_FISH_X + 1)) - MAX_FISH_Y;
+        fishes[i].weight = INIT_WEIGHT;
+    }
 
-        srand(time(0));
+    double start = omp_get_wtime(); // Start the timer
 
-        for(i = 0; i < NUM_FISH; i++) {
-            fishes[i].x = (float) rand() / RAND_MAX * LAKE_SIZE - (LAKE_SIZE / 2);
-            fishes[i].y = (float) rand() / RAND_MAX * LAKE_SIZE - (LAKE_SIZE / 2);
-            fishes[i].weight = INIT_WEIGHT;
+    // Simulation
+    for (int t = 0; t < SIMULATION_STEPS; t++)
+    {
+        float max_delta_f = -99999.0;
+        unsigned int seed; // Declare seed outside the loop
+
+// Get the fish planned position and calculate maximum δ(f)
+#pragma omp parallel for private(seed) reduction(max : max_delta_f)
+        for (int i = 0; i < NUM_FISH; i++)
+        {
+            seed = 123456789 + omp_get_thread_num(); // Initialize seed for each thread
+            fishes[i].plan_x = fishes[i].x + ((float)rand_r(&seed) / RAND_MAX) * 0.2 - 0.1;
+            fishes[i].plan_y = fishes[i].y + ((float)rand_r(&seed) / RAND_MAX) * 0.2 - 0.1;
+            if (fishes[i].plan_x > MAX_FISH_X)
+                fishes[i].plan_x = MAX_FISH_X;
+            if (fishes[i].plan_x < MIN_FISH_X)
+                fishes[i].plan_x = MIN_FISH_X;
+            if (fishes[i].plan_y > MAX_FISH_Y)
+                fishes[i].plan_y = MAX_FISH_Y;
+            if (fishes[i].plan_y < MIN_FISH_Y)
+                fishes[i].plan_y = MIN_FISH_Y;
+
+            fishes[i].delta_f = sqrt(fishes[i].plan_x * fishes[i].plan_x + fishes[i].plan_y * fishes[i].plan_y) - sqrt(fishes[i].x * fishes[i].x + fishes[i].y * fishes[i].y);
+            if (fishes[i].delta_f > max_delta_f)
+            {
+                max_delta_f = fishes[i].delta_f;
+            }
         }
 
-        double start = omp_get_wtime();
+        float total_distance_weighted = 0.0;
+        float total_distance = 0.0;
 
-        for(t = 0; t < SIMULATION_STEPS; t++) {
-            float total_distance_weighted = 0;
-            float total_distance = 0;
-            float max_delta_f = -1;
-
-            // Parallel loop for updating fish position and calculating maximum δ(f)
-            #pragma omp parallel for schedule(dynamic) reduction(max:max_delta_f) reduction(+:total_distance_weighted,total_distance)
-            for(i = 0; i < NUM_FISH; i++) {
-                float old_distance = calculate_distance(fishes[i].x, fishes[i].y);
-                swim(&fishes[i]);
-                float new_distance = calculate_distance(fishes[i].x, fishes[i].y);
-                float delta_f = new_distance - old_distance;
-
-                if(delta_f > max_delta_f) {
-                    max_delta_f = delta_f;
-                }
-                
-                total_distance_weighted += new_distance * fishes[i].weight;
-                total_distance += new_distance;
+// Update the fish position weight if it can eat and swim
+#pragma omp parallel for reduction(+ : total_distance_weighted, total_distance)
+        for (int i = 0; i < NUM_FISH; i++)
+        {
+            float planWeight = fishes[i].weight + fishes[i].delta_f / max_delta_f;
+            if (planWeight > 2 * INIT_WEIGHT)
+            {
+                fishes[i].weight = 2 * INIT_WEIGHT;
             }
-
-            // Parallel loop for updating fish weight
-            #pragma omp parallel for
-            for(i = 0; i < NUM_FISH; i++) {
-                float old_distance = calculate_distance(fishes[i].old_x, fishes[i].old_y);
-                float new_distance = calculate_distance(fishes[i].x, fishes[i].y);
-                float delta_f = new_distance - old_distance;
-                
-                fishes[i].weight += delta_f / max_delta_f;
-                if(fishes[i].weight > 2 * INIT_WEIGHT) {
-                    fishes[i].weight = 2 * INIT_WEIGHT;
-                }
+            if (planWeight > fishes[i].weight)
+            {
+                fishes[i].x = fishes[i].plan_x;
+                fishes[i].y = fishes[i].plan_y;
+                fishes[i].weight = planWeight;
             }
-
-            barycentre = total_distance_weighted / total_distance;
+            float curr_distance = sqrt(fishes[i].x * fishes[i].x + fishes[i].y * fishes[i].y);
+            total_distance_weighted += curr_distance * fishes[i].weight;
+            total_distance += curr_distance;
         }
+
+        float barycentre = total_distance_weighted / total_distance;
+        printf("Bari: %.5f\n", barycentre);
 
         double end = omp_get_wtime();
 
-        fprintf(fp, "%d, %f\n", SIMULATION_STEPS, end - start);
+        double cpu_time_used = ((double)(end - start));
+        fprintf(fp, "%d, %f\n", t, cpu_time_used); // Changed from SIMULATION_STEPS to t
+        printf("Simulation step %d complete. Time taken: %f seconds.\n", t, cpu_time_used);
     }
 
-    fclose(fp);
+    fclose(fp);   // Close the file
+    free(fishes); // Free the allocated memory
     return 0;
 }

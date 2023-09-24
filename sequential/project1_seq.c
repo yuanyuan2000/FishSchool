@@ -3,7 +3,7 @@
 #include <math.h>
 #include <time.h>
 
-#define NUM_FISH 1000000
+#define NUM_FISH 4194304
 #define MAX_FISH_X 100
 #define MAX_FISH_Y 100
 #define MIN_FISH_X -MAX_FISH_X
@@ -88,6 +88,9 @@ int main() {
         fprintf(fp, "%d, %f\n", SIMULATION_STEPS, cpu_time_used);
         printf("Simulation complete. Time taken: %f seconds.\n", cpu_time_used);
     }
+
+
+    free(fishes);
 
     return 0;
 }
