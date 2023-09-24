@@ -1,0 +1,1001 @@
+/var/spool/slurmd/job4614266/slurm_script: line 16: export: `100': not a valid identifier
+Bari 0: 10.17026
+Simulation complete. Time taken: 0.214841 seconds.
+Bari 1: 10.33696
+Simulation complete. Time taken: 0.429623 seconds.
+Bari 2: 10.50421
+Simulation complete. Time taken: 0.644177 seconds.
+Bari 3: 10.67097
+Simulation complete. Time taken: 0.858826 seconds.
+Bari 4: 10.83797
+Simulation complete. Time taken: 1.073610 seconds.
+Bari 5: 11.00602
+Simulation complete. Time taken: 1.288564 seconds.
+Bari 6: 11.17484
+Simulation complete. Time taken: 1.503609 seconds.
+Bari 7: 11.34383
+Simulation complete. Time taken: 1.718288 seconds.
+Bari 8: 11.51260
+Simulation complete. Time taken: 1.933622 seconds.
+Bari 9: 11.68187
+Simulation complete. Time taken: 2.148578 seconds.
+Bari 10: 11.85093
+Simulation complete. Time taken: 2.363265 seconds.
+Bari 11: 12.02009
+Simulation complete. Time taken: 2.578184 seconds.
+Bari 12: 12.18869
+Simulation complete. Time taken: 2.792944 seconds.
+Bari 13: 12.35791
+Simulation complete. Time taken: 3.007855 seconds.
+Bari 14: 12.52648
+Simulation complete. Time taken: 3.222586 seconds.
+Bari 15: 12.69492
+Simulation complete. Time taken: 3.437273 seconds.
+Bari 16: 12.86318
+Simulation complete. Time taken: 3.651937 seconds.
+Bari 17: 13.03161
+Simulation complete. Time taken: 3.866744 seconds.
+Bari 18: 13.19979
+Simulation complete. Time taken: 4.081702 seconds.
+Bari 19: 13.36847
+Simulation complete. Time taken: 4.296545 seconds.
+Bari 20: 13.53649
+Simulation complete. Time taken: 4.511332 seconds.
+Bari 21: 13.70526
+Simulation complete. Time taken: 4.727017 seconds.
+Bari 22: 13.87425
+Simulation complete. Time taken: 4.943444 seconds.
+Bari 23: 14.04331
+Simulation complete. Time taken: 5.158753 seconds.
+Bari 24: 14.21253
+Simulation complete. Time taken: 5.373846 seconds.
+Bari 25: 14.38095
+Simulation complete. Time taken: 5.589464 seconds.
+Bari 26: 14.54991
+Simulation complete. Time taken: 5.804527 seconds.
+Bari 27: 14.71796
+Simulation complete. Time taken: 6.019297 seconds.
+Bari 28: 14.88615
+Simulation complete. Time taken: 6.234618 seconds.
+Bari 29: 15.05393
+Simulation complete. Time taken: 6.449499 seconds.
+Bari 30: 15.22139
+Simulation complete. Time taken: 6.664401 seconds.
+Bari 31: 15.38856
+Simulation complete. Time taken: 6.879652 seconds.
+Bari 32: 15.55568
+Simulation complete. Time taken: 7.094791 seconds.
+Bari 33: 15.72310
+Simulation complete. Time taken: 7.310015 seconds.
+Bari 34: 15.89002
+Simulation complete. Time taken: 7.524961 seconds.
+Bari 35: 16.05698
+Simulation complete. Time taken: 7.740421 seconds.
+Bari 36: 16.22392
+Simulation complete. Time taken: 7.955659 seconds.
+Bari 37: 16.38963
+Simulation complete. Time taken: 8.171288 seconds.
+Bari 38: 16.55464
+Simulation complete. Time taken: 8.386876 seconds.
+Bari 39: 16.72053
+Simulation complete. Time taken: 8.604054 seconds.
+Bari 40: 16.88515
+Simulation complete. Time taken: 8.820237 seconds.
+Bari 41: 17.04977
+Simulation complete. Time taken: 9.036992 seconds.
+Bari 42: 17.21390
+Simulation complete. Time taken: 9.254286 seconds.
+Bari 43: 17.37676
+Simulation complete. Time taken: 9.471954 seconds.
+Bari 44: 17.53911
+Simulation complete. Time taken: 9.690080 seconds.
+Bari 45: 17.70005
+Simulation complete. Time taken: 9.909088 seconds.
+Bari 46: 17.86054
+Simulation complete. Time taken: 10.128773 seconds.
+Bari 47: 18.01812
+Simulation complete. Time taken: 10.349100 seconds.
+Bari 48: 18.17300
+Simulation complete. Time taken: 10.570460 seconds.
+Bari 49: 18.32674
+Simulation complete. Time taken: 10.792913 seconds.
+Bari 50: 18.47767
+Simulation complete. Time taken: 11.016571 seconds.
+Bari 51: 18.62562
+Simulation complete. Time taken: 11.241817 seconds.
+Bari 52: 18.77029
+Simulation complete. Time taken: 11.470237 seconds.
+Bari 53: 18.91086
+Simulation complete. Time taken: 11.698564 seconds.
+Bari 54: 19.04923
+Simulation complete. Time taken: 11.928757 seconds.
+Bari 55: 19.18176
+Simulation complete. Time taken: 12.160692 seconds.
+Bari 56: 19.31067
+Simulation complete. Time taken: 12.394699 seconds.
+Bari 57: 19.43478
+Simulation complete. Time taken: 12.630069 seconds.
+Bari 58: 19.55565
+Simulation complete. Time taken: 12.866582 seconds.
+Bari 59: 19.67033
+Simulation complete. Time taken: 13.103328 seconds.
+Bari 60: 19.78079
+Simulation complete. Time taken: 13.340857 seconds.
+Bari 61: 19.88657
+Simulation complete. Time taken: 13.575248 seconds.
+Bari 62: 19.98778
+Simulation complete. Time taken: 13.807375 seconds.
+Bari 63: 20.08503
+Simulation complete. Time taken: 14.036555 seconds.
+Bari 64: 20.17694
+Simulation complete. Time taken: 14.262890 seconds.
+Bari 65: 20.26457
+Simulation complete. Time taken: 14.486181 seconds.
+Bari 66: 20.34811
+Simulation complete. Time taken: 14.706645 seconds.
+Bari 67: 20.42858
+Simulation complete. Time taken: 14.924420 seconds.
+Bari 68: 20.50463
+Simulation complete. Time taken: 15.139676 seconds.
+Bari 69: 20.57657
+Simulation complete. Time taken: 15.353037 seconds.
+Bari 70: 20.64435
+Simulation complete. Time taken: 15.564376 seconds.
+Bari 71: 20.70976
+Simulation complete. Time taken: 15.774018 seconds.
+Bari 72: 20.77181
+Simulation complete. Time taken: 15.982286 seconds.
+Bari 73: 20.83142
+Simulation complete. Time taken: 16.189224 seconds.
+Bari 74: 20.88755
+Simulation complete. Time taken: 16.395234 seconds.
+Bari 75: 20.94111
+Simulation complete. Time taken: 16.600104 seconds.
+Bari 76: 20.99223
+Simulation complete. Time taken: 16.804297 seconds.
+Bari 77: 21.04052
+Simulation complete. Time taken: 17.007813 seconds.
+Bari 78: 21.08849
+Simulation complete. Time taken: 17.210379 seconds.
+Bari 79: 21.13365
+Simulation complete. Time taken: 17.412512 seconds.
+Bari 80: 21.17772
+Simulation complete. Time taken: 17.615775 seconds.
+Bari 81: 21.22016
+Simulation complete. Time taken: 17.817034 seconds.
+Bari 82: 21.26103
+Simulation complete. Time taken: 18.017647 seconds.
+Bari 83: 21.29908
+Simulation complete. Time taken: 18.217791 seconds.
+Bari 84: 21.33707
+Simulation complete. Time taken: 18.417860 seconds.
+Bari 85: 21.37449
+Simulation complete. Time taken: 18.617481 seconds.
+Bari 86: 21.41023
+Simulation complete. Time taken: 18.816865 seconds.
+Bari 87: 21.44517
+Simulation complete. Time taken: 19.016012 seconds.
+Bari 88: 21.47941
+Simulation complete. Time taken: 19.214976 seconds.
+Bari 89: 21.51260
+Simulation complete. Time taken: 19.413881 seconds.
+Bari 90: 21.54498
+Simulation complete. Time taken: 19.612737 seconds.
+Bari 91: 21.57635
+Simulation complete. Time taken: 19.811374 seconds.
+Bari 92: 21.60798
+Simulation complete. Time taken: 20.009724 seconds.
+Bari 93: 21.63794
+Simulation complete. Time taken: 20.207952 seconds.
+Bari 94: 21.66813
+Simulation complete. Time taken: 20.406197 seconds.
+Bari 95: 21.69724
+Simulation complete. Time taken: 20.606005 seconds.
+Bari 96: 21.72605
+Simulation complete. Time taken: 20.803955 seconds.
+Bari 97: 21.75469
+Simulation complete. Time taken: 21.001813 seconds.
+Bari 98: 21.78174
+Simulation complete. Time taken: 21.199645 seconds.
+Bari 99: 21.80872
+Simulation complete. Time taken: 21.397686 seconds.
+Bari 100: 21.83635
+Simulation complete. Time taken: 21.595283 seconds.
+Bari 101: 21.86325
+Simulation complete. Time taken: 21.792890 seconds.
+Bari 102: 21.88856
+Simulation complete. Time taken: 21.990901 seconds.
+Bari 103: 21.91485
+Simulation complete. Time taken: 22.189398 seconds.
+Bari 104: 21.94010
+Simulation complete. Time taken: 22.386728 seconds.
+Bari 105: 21.96497
+Simulation complete. Time taken: 22.584251 seconds.
+Bari 106: 21.99121
+Simulation complete. Time taken: 22.781473 seconds.
+Bari 107: 22.01594
+Simulation complete. Time taken: 22.978670 seconds.
+Bari 108: 22.04157
+Simulation complete. Time taken: 23.175774 seconds.
+Bari 109: 22.06515
+Simulation complete. Time taken: 23.373039 seconds.
+Bari 110: 22.08876
+Simulation complete. Time taken: 23.570229 seconds.
+Bari 111: 22.11197
+Simulation complete. Time taken: 23.767412 seconds.
+Bari 112: 22.13528
+Simulation complete. Time taken: 23.964374 seconds.
+Bari 113: 22.15780
+Simulation complete. Time taken: 24.161305 seconds.
+Bari 114: 22.18143
+Simulation complete. Time taken: 24.358275 seconds.
+Bari 115: 22.20416
+Simulation complete. Time taken: 24.555357 seconds.
+Bari 116: 22.22552
+Simulation complete. Time taken: 24.752096 seconds.
+Bari 117: 22.24813
+Simulation complete. Time taken: 24.948949 seconds.
+Bari 118: 22.26942
+Simulation complete. Time taken: 25.146456 seconds.
+Bari 119: 22.29053
+Simulation complete. Time taken: 25.343195 seconds.
+Bari 120: 22.31188
+Simulation complete. Time taken: 25.539928 seconds.
+Bari 121: 22.33324
+Simulation complete. Time taken: 25.736530 seconds.
+Bari 122: 22.35332
+Simulation complete. Time taken: 25.933087 seconds.
+Bari 123: 22.37407
+Simulation complete. Time taken: 26.129494 seconds.
+Bari 124: 22.39576
+Simulation complete. Time taken: 26.325874 seconds.
+Bari 125: 22.41602
+Simulation complete. Time taken: 26.523400 seconds.
+Bari 126: 22.43582
+Simulation complete. Time taken: 26.719690 seconds.
+Bari 127: 22.45567
+Simulation complete. Time taken: 26.916005 seconds.
+Bari 128: 22.47535
+Simulation complete. Time taken: 27.112235 seconds.
+Bari 129: 22.49510
+Simulation complete. Time taken: 27.308394 seconds.
+Bari 130: 22.51527
+Simulation complete. Time taken: 27.504528 seconds.
+Bari 131: 22.53567
+Simulation complete. Time taken: 27.700803 seconds.
+Bari 132: 22.55523
+Simulation complete. Time taken: 27.896951 seconds.
+Bari 133: 22.57508
+Simulation complete. Time taken: 28.092943 seconds.
+Bari 134: 22.59387
+Simulation complete. Time taken: 28.289165 seconds.
+Bari 135: 22.61230
+Simulation complete. Time taken: 28.485305 seconds.
+Bari 136: 22.63146
+Simulation complete. Time taken: 28.681582 seconds.
+Bari 137: 22.65034
+Simulation complete. Time taken: 28.878030 seconds.
+Bari 138: 22.66918
+Simulation complete. Time taken: 29.074049 seconds.
+Bari 139: 22.68732
+Simulation complete. Time taken: 29.269855 seconds.
+Bari 140: 22.70541
+Simulation complete. Time taken: 29.466065 seconds.
+Bari 141: 22.72388
+Simulation complete. Time taken: 29.661952 seconds.
+Bari 142: 22.74139
+Simulation complete. Time taken: 29.858127 seconds.
+Bari 143: 22.75935
+Simulation complete. Time taken: 30.053803 seconds.
+Bari 144: 22.77729
+Simulation complete. Time taken: 30.249446 seconds.
+Bari 145: 22.79448
+Simulation complete. Time taken: 30.445051 seconds.
+Bari 146: 22.81185
+Simulation complete. Time taken: 30.640900 seconds.
+Bari 147: 22.82883
+Simulation complete. Time taken: 30.836546 seconds.
+Bari 148: 22.84709
+Simulation complete. Time taken: 31.032227 seconds.
+Bari 149: 22.86409
+Simulation complete. Time taken: 31.227727 seconds.
+Bari 150: 22.88129
+Simulation complete. Time taken: 31.423211 seconds.
+Bari 151: 22.89909
+Simulation complete. Time taken: 31.618821 seconds.
+Bari 152: 22.91554
+Simulation complete. Time taken: 31.814359 seconds.
+Bari 153: 22.93314
+Simulation complete. Time taken: 32.009738 seconds.
+Bari 154: 22.94916
+Simulation complete. Time taken: 32.205348 seconds.
+Bari 155: 22.96597
+Simulation complete. Time taken: 32.401010 seconds.
+Bari 156: 22.98325
+Simulation complete. Time taken: 32.597567 seconds.
+Bari 157: 23.00056
+Simulation complete. Time taken: 32.793216 seconds.
+Bari 158: 23.01691
+Simulation complete. Time taken: 32.988537 seconds.
+Bari 159: 23.03363
+Simulation complete. Time taken: 33.183973 seconds.
+Bari 160: 23.04966
+Simulation complete. Time taken: 33.379497 seconds.
+Bari 161: 23.06552
+Simulation complete. Time taken: 33.574694 seconds.
+Bari 162: 23.08105
+Simulation complete. Time taken: 33.770050 seconds.
+Bari 163: 23.09799
+Simulation complete. Time taken: 33.966080 seconds.
+Bari 164: 23.11349
+Simulation complete. Time taken: 34.161235 seconds.
+Bari 165: 23.12968
+Simulation complete. Time taken: 34.356372 seconds.
+Bari 166: 23.14585
+Simulation complete. Time taken: 34.551715 seconds.
+Bari 167: 23.16220
+Simulation complete. Time taken: 34.747125 seconds.
+Bari 168: 23.17707
+Simulation complete. Time taken: 34.942251 seconds.
+Bari 169: 23.19317
+Simulation complete. Time taken: 35.137307 seconds.
+Bari 170: 23.20783
+Simulation complete. Time taken: 35.332364 seconds.
+Bari 171: 23.22344
+Simulation complete. Time taken: 35.527385 seconds.
+Bari 172: 23.23879
+Simulation complete. Time taken: 35.722589 seconds.
+Bari 173: 23.25370
+Simulation complete. Time taken: 35.917655 seconds.
+Bari 174: 23.26828
+Simulation complete. Time taken: 36.112666 seconds.
+Bari 175: 23.28264
+Simulation complete. Time taken: 36.307496 seconds.
+Bari 176: 23.29903
+Simulation complete. Time taken: 36.503127 seconds.
+Bari 177: 23.31453
+Simulation complete. Time taken: 36.698070 seconds.
+Bari 178: 23.33001
+Simulation complete. Time taken: 36.893156 seconds.
+Bari 179: 23.34424
+Simulation complete. Time taken: 37.088089 seconds.
+Bari 180: 23.35811
+Simulation complete. Time taken: 37.282919 seconds.
+Bari 181: 23.37409
+Simulation complete. Time taken: 37.477774 seconds.
+Bari 182: 23.38799
+Simulation complete. Time taken: 37.672546 seconds.
+Bari 183: 23.40248
+Simulation complete. Time taken: 37.867486 seconds.
+Bari 184: 23.41872
+Simulation complete. Time taken: 38.062263 seconds.
+Bari 185: 23.43287
+Simulation complete. Time taken: 38.256994 seconds.
+Bari 186: 23.44795
+Simulation complete. Time taken: 38.454297 seconds.
+Bari 187: 23.46226
+Simulation complete. Time taken: 38.649932 seconds.
+Bari 188: 23.47680
+Simulation complete. Time taken: 38.844987 seconds.
+Bari 189: 23.49188
+Simulation complete. Time taken: 39.039682 seconds.
+Bari 190: 23.50524
+Simulation complete. Time taken: 39.235567 seconds.
+Bari 191: 23.51959
+Simulation complete. Time taken: 39.430786 seconds.
+Bari 192: 23.53429
+Simulation complete. Time taken: 39.625559 seconds.
+Bari 193: 23.54800
+Simulation complete. Time taken: 39.820540 seconds.
+Bari 194: 23.56264
+Simulation complete. Time taken: 40.015157 seconds.
+Bari 195: 23.57591
+Simulation complete. Time taken: 40.209768 seconds.
+Bari 196: 23.58966
+Simulation complete. Time taken: 40.404441 seconds.
+Bari 197: 23.60354
+Simulation complete. Time taken: 40.599292 seconds.
+Bari 198: 23.61806
+Simulation complete. Time taken: 40.793938 seconds.
+Bari 199: 23.63153
+Simulation complete. Time taken: 40.988941 seconds.
+Bari 200: 23.64513
+Simulation complete. Time taken: 41.183481 seconds.
+Bari 201: 23.65872
+Simulation complete. Time taken: 41.378003 seconds.
+Bari 202: 23.67218
+Simulation complete. Time taken: 41.572982 seconds.
+Bari 203: 23.68553
+Simulation complete. Time taken: 41.767470 seconds.
+Bari 204: 23.69831
+Simulation complete. Time taken: 41.962065 seconds.
+Bari 205: 23.71159
+Simulation complete. Time taken: 42.156528 seconds.
+Bari 206: 23.72489
+Simulation complete. Time taken: 42.351302 seconds.
+Bari 207: 23.73880
+Simulation complete. Time taken: 42.545719 seconds.
+Bari 208: 23.75146
+Simulation complete. Time taken: 42.740243 seconds.
+Bari 209: 23.76468
+Simulation complete. Time taken: 42.935026 seconds.
+Bari 210: 23.77783
+Simulation complete. Time taken: 43.129694 seconds.
+Bari 211: 23.79199
+Simulation complete. Time taken: 43.324322 seconds.
+Bari 212: 23.80445
+Simulation complete. Time taken: 43.518966 seconds.
+Bari 213: 23.81724
+Simulation complete. Time taken: 43.713504 seconds.
+Bari 214: 23.83057
+Simulation complete. Time taken: 43.908016 seconds.
+Bari 215: 23.84309
+Simulation complete. Time taken: 44.102327 seconds.
+Bari 216: 23.85583
+Simulation complete. Time taken: 44.296632 seconds.
+Bari 217: 23.86907
+Simulation complete. Time taken: 44.491286 seconds.
+Bari 218: 23.88163
+Simulation complete. Time taken: 44.685595 seconds.
+Bari 219: 23.89349
+Simulation complete. Time taken: 44.879928 seconds.
+Bari 220: 23.90568
+Simulation complete. Time taken: 45.074492 seconds.
+Bari 221: 23.91856
+Simulation complete. Time taken: 45.268769 seconds.
+Bari 222: 23.93155
+Simulation complete. Time taken: 45.462995 seconds.
+Bari 223: 23.94402
+Simulation complete. Time taken: 45.657219 seconds.
+Bari 224: 23.95626
+Simulation complete. Time taken: 45.851434 seconds.
+Bari 225: 23.96899
+Simulation complete. Time taken: 46.045888 seconds.
+Bari 226: 23.98153
+Simulation complete. Time taken: 46.240004 seconds.
+Bari 227: 23.99356
+Simulation complete. Time taken: 46.434175 seconds.
+Bari 228: 24.00646
+Simulation complete. Time taken: 46.628319 seconds.
+Bari 229: 24.01907
+Simulation complete. Time taken: 46.822482 seconds.
+Bari 230: 24.03184
+Simulation complete. Time taken: 47.016886 seconds.
+Bari 231: 24.04387
+Simulation complete. Time taken: 47.211020 seconds.
+Bari 232: 24.05679
+Simulation complete. Time taken: 47.405124 seconds.
+Bari 233: 24.06876
+Simulation complete. Time taken: 47.602744 seconds.
+Bari 234: 24.08059
+Simulation complete. Time taken: 47.797126 seconds.
+Bari 235: 24.09212
+Simulation complete. Time taken: 47.991207 seconds.
+Bari 236: 24.10398
+Simulation complete. Time taken: 48.185488 seconds.
+Bari 237: 24.11578
+Simulation complete. Time taken: 48.379551 seconds.
+Bari 238: 24.12892
+Simulation complete. Time taken: 48.573600 seconds.
+Bari 239: 24.14052
+Simulation complete. Time taken: 48.767692 seconds.
+Bari 240: 24.15189
+Simulation complete. Time taken: 48.961750 seconds.
+Bari 241: 24.16398
+Simulation complete. Time taken: 49.155969 seconds.
+Bari 242: 24.17561
+Simulation complete. Time taken: 49.350065 seconds.
+Bari 243: 24.18660
+Simulation complete. Time taken: 49.544274 seconds.
+Bari 244: 24.19917
+Simulation complete. Time taken: 49.738490 seconds.
+Bari 245: 24.21100
+Simulation complete. Time taken: 49.932541 seconds.
+Bari 246: 24.22272
+Simulation complete. Time taken: 50.126721 seconds.
+Bari 247: 24.23450
+Simulation complete. Time taken: 50.320674 seconds.
+Bari 248: 24.24611
+Simulation complete. Time taken: 50.517481 seconds.
+Bari 249: 24.25811
+Simulation complete. Time taken: 50.711536 seconds.
+Bari 250: 24.26982
+Simulation complete. Time taken: 50.905496 seconds.
+Bari 251: 24.28089
+Simulation complete. Time taken: 51.099652 seconds.
+Bari 252: 24.29160
+Simulation complete. Time taken: 51.293600 seconds.
+Bari 253: 24.30368
+Simulation complete. Time taken: 51.487580 seconds.
+Bari 254: 24.31633
+Simulation complete. Time taken: 51.681426 seconds.
+Bari 255: 24.32765
+Simulation complete. Time taken: 51.875345 seconds.
+Bari 256: 24.33815
+Simulation complete. Time taken: 52.069307 seconds.
+Bari 257: 24.35061
+Simulation complete. Time taken: 52.263324 seconds.
+Bari 258: 24.36110
+Simulation complete. Time taken: 52.457183 seconds.
+Bari 259: 24.37284
+Simulation complete. Time taken: 52.651043 seconds.
+Bari 260: 24.38435
+Simulation complete. Time taken: 52.844917 seconds.
+Bari 261: 24.39459
+Simulation complete. Time taken: 53.038775 seconds.
+Bari 262: 24.40688
+Simulation complete. Time taken: 53.232845 seconds.
+Bari 263: 24.41814
+Simulation complete. Time taken: 53.427889 seconds.
+Bari 264: 24.42981
+Simulation complete. Time taken: 53.623767 seconds.
+Bari 265: 24.43973
+Simulation complete. Time taken: 53.817568 seconds.
+Bari 266: 24.45086
+Simulation complete. Time taken: 54.011413 seconds.
+Bari 267: 24.46160
+Simulation complete. Time taken: 54.205333 seconds.
+Bari 268: 24.47187
+Simulation complete. Time taken: 54.399317 seconds.
+Bari 269: 24.48267
+Simulation complete. Time taken: 54.593286 seconds.
+Bari 270: 24.49369
+Simulation complete. Time taken: 54.787163 seconds.
+Bari 271: 24.50424
+Simulation complete. Time taken: 54.981175 seconds.
+Bari 272: 24.51562
+Simulation complete. Time taken: 55.175167 seconds.
+Bari 273: 24.52696
+Simulation complete. Time taken: 55.368882 seconds.
+Bari 274: 24.53753
+Simulation complete. Time taken: 55.562577 seconds.
+Bari 275: 24.54887
+Simulation complete. Time taken: 55.756227 seconds.
+Bari 276: 24.55954
+Simulation complete. Time taken: 55.949950 seconds.
+Bari 277: 24.57084
+Simulation complete. Time taken: 56.143677 seconds.
+Bari 278: 24.58231
+Simulation complete. Time taken: 56.338211 seconds.
+Bari 279: 24.59245
+Simulation complete. Time taken: 56.533225 seconds.
+Bari 280: 24.60353
+Simulation complete. Time taken: 56.726883 seconds.
+Bari 281: 24.61362
+Simulation complete. Time taken: 56.920796 seconds.
+Bari 282: 24.62413
+Simulation complete. Time taken: 57.114606 seconds.
+Bari 283: 24.63380
+Simulation complete. Time taken: 57.308454 seconds.
+Bari 284: 24.64488
+Simulation complete. Time taken: 57.502324 seconds.
+Bari 285: 24.65556
+Simulation complete. Time taken: 57.695944 seconds.
+Bari 286: 24.66520
+Simulation complete. Time taken: 57.890460 seconds.
+Bari 287: 24.67575
+Simulation complete. Time taken: 58.084413 seconds.
+Bari 288: 24.68659
+Simulation complete. Time taken: 58.278357 seconds.
+Bari 289: 24.69687
+Simulation complete. Time taken: 58.472052 seconds.
+Bari 290: 24.70809
+Simulation complete. Time taken: 58.669258 seconds.
+Bari 291: 24.71874
+Simulation complete. Time taken: 58.867102 seconds.
+Bari 292: 24.72917
+Simulation complete. Time taken: 59.060919 seconds.
+Bari 293: 24.73962
+Simulation complete. Time taken: 59.254672 seconds.
+Bari 294: 24.75007
+Simulation complete. Time taken: 59.450953 seconds.
+Bari 295: 24.75975
+Simulation complete. Time taken: 59.647465 seconds.
+Bari 296: 24.77055
+Simulation complete. Time taken: 59.843823 seconds.
+Bari 297: 24.78039
+Simulation complete. Time taken: 60.037587 seconds.
+Bari 298: 24.79004
+Simulation complete. Time taken: 60.231116 seconds.
+Bari 299: 24.80067
+Simulation complete. Time taken: 60.427550 seconds.
+Bari 300: 24.81048
+Simulation complete. Time taken: 60.622412 seconds.
+Bari 301: 24.82130
+Simulation complete. Time taken: 60.816183 seconds.
+Bari 302: 24.83128
+Simulation complete. Time taken: 61.009773 seconds.
+Bari 303: 24.84132
+Simulation complete. Time taken: 61.203301 seconds.
+Bari 304: 24.85126
+Simulation complete. Time taken: 61.397144 seconds.
+Bari 305: 24.86089
+Simulation complete. Time taken: 61.590639 seconds.
+Bari 306: 24.87189
+Simulation complete. Time taken: 61.784311 seconds.
+Bari 307: 24.88150
+Simulation complete. Time taken: 61.978203 seconds.
+Bari 308: 24.89177
+Simulation complete. Time taken: 62.171635 seconds.
+Bari 309: 24.90125
+Simulation complete. Time taken: 62.365229 seconds.
+Bari 310: 24.91198
+Simulation complete. Time taken: 62.561293 seconds.
+Bari 311: 24.92118
+Simulation complete. Time taken: 62.755006 seconds.
+Bari 312: 24.93179
+Simulation complete. Time taken: 62.948740 seconds.
+Bari 313: 24.94223
+Simulation complete. Time taken: 63.142174 seconds.
+Bari 314: 24.95212
+Simulation complete. Time taken: 63.335583 seconds.
+Bari 315: 24.96108
+Simulation complete. Time taken: 63.529372 seconds.
+Bari 316: 24.97203
+Simulation complete. Time taken: 63.722757 seconds.
+Bari 317: 24.98228
+Simulation complete. Time taken: 63.916378 seconds.
+Bari 318: 24.99049
+Simulation complete. Time taken: 64.109843 seconds.
+Bari 319: 25.00092
+Simulation complete. Time taken: 64.303275 seconds.
+Bari 320: 25.01061
+Simulation complete. Time taken: 64.497092 seconds.
+Bari 321: 25.02139
+Simulation complete. Time taken: 64.690492 seconds.
+Bari 322: 25.03073
+Simulation complete. Time taken: 64.883989 seconds.
+Bari 323: 25.04114
+Simulation complete. Time taken: 65.077444 seconds.
+Bari 324: 25.05103
+Simulation complete. Time taken: 65.270885 seconds.
+Bari 325: 25.05990
+Simulation complete. Time taken: 65.464686 seconds.
+Bari 326: 25.06969
+Simulation complete. Time taken: 65.658042 seconds.
+Bari 327: 25.07878
+Simulation complete. Time taken: 65.851494 seconds.
+Bari 328: 25.08874
+Simulation complete. Time taken: 66.045246 seconds.
+Bari 329: 25.09881
+Simulation complete. Time taken: 66.238579 seconds.
+Bari 330: 25.10828
+Simulation complete. Time taken: 66.432072 seconds.
+Bari 331: 25.11758
+Simulation complete. Time taken: 66.625413 seconds.
+Bari 332: 25.12699
+Simulation complete. Time taken: 66.818786 seconds.
+Bari 333: 25.13584
+Simulation complete. Time taken: 67.012209 seconds.
+Bari 334: 25.14589
+Simulation complete. Time taken: 67.205543 seconds.
+Bari 335: 25.15615
+Simulation complete. Time taken: 67.398881 seconds.
+Bari 336: 25.16501
+Simulation complete. Time taken: 67.592464 seconds.
+Bari 337: 25.17383
+Simulation complete. Time taken: 67.785844 seconds.
+Bari 338: 25.18421
+Simulation complete. Time taken: 67.979345 seconds.
+Bari 339: 25.19320
+Simulation complete. Time taken: 68.172746 seconds.
+Bari 340: 25.20297
+Simulation complete. Time taken: 68.366017 seconds.
+Bari 341: 25.21194
+Simulation complete. Time taken: 68.563030 seconds.
+Bari 342: 25.22049
+Simulation complete. Time taken: 68.756378 seconds.
+Bari 343: 25.22984
+Simulation complete. Time taken: 68.949824 seconds.
+Bari 344: 25.23970
+Simulation complete. Time taken: 69.143352 seconds.
+Bari 345: 25.24903
+Simulation complete. Time taken: 69.336724 seconds.
+Bari 346: 25.25783
+Simulation complete. Time taken: 69.530780 seconds.
+Bari 347: 25.26655
+Simulation complete. Time taken: 69.724313 seconds.
+Bari 348: 25.27619
+Simulation complete. Time taken: 69.917756 seconds.
+Bari 349: 25.28540
+Simulation complete. Time taken: 70.111900 seconds.
+Bari 350: 25.29497
+Simulation complete. Time taken: 70.305365 seconds.
+Bari 351: 25.30386
+Simulation complete. Time taken: 70.498622 seconds.
+Bari 352: 25.31414
+Simulation complete. Time taken: 70.692153 seconds.
+Bari 353: 25.32256
+Simulation complete. Time taken: 70.885406 seconds.
+Bari 354: 25.33203
+Simulation complete. Time taken: 71.078721 seconds.
+Bari 355: 25.34064
+Simulation complete. Time taken: 71.271932 seconds.
+Bari 356: 25.35120
+Simulation complete. Time taken: 71.467722 seconds.
+Bari 357: 25.36103
+Simulation complete. Time taken: 71.661167 seconds.
+Bari 358: 25.36946
+Simulation complete. Time taken: 71.854436 seconds.
+Bari 359: 25.37844
+Simulation complete. Time taken: 72.047894 seconds.
+Bari 360: 25.38769
+Simulation complete. Time taken: 72.241262 seconds.
+Bari 361: 25.39638
+Simulation complete. Time taken: 72.434461 seconds.
+Bari 362: 25.40637
+Simulation complete. Time taken: 72.627961 seconds.
+Bari 363: 25.41575
+Simulation complete. Time taken: 72.821480 seconds.
+Bari 364: 25.42426
+Simulation complete. Time taken: 73.014726 seconds.
+Bari 365: 25.43337
+Simulation complete. Time taken: 73.208246 seconds.
+Bari 366: 25.44253
+Simulation complete. Time taken: 73.401574 seconds.
+Bari 367: 25.45086
+Simulation complete. Time taken: 73.594737 seconds.
+Bari 368: 25.46045
+Simulation complete. Time taken: 73.788211 seconds.
+Bari 369: 25.46913
+Simulation complete. Time taken: 73.982054 seconds.
+Bari 370: 25.47765
+Simulation complete. Time taken: 74.175406 seconds.
+Bari 371: 25.48709
+Simulation complete. Time taken: 74.368729 seconds.
+Bari 372: 25.49570
+Simulation complete. Time taken: 74.561897 seconds.
+Bari 373: 25.50516
+Simulation complete. Time taken: 74.755176 seconds.
+Bari 374: 25.51401
+Simulation complete. Time taken: 74.948372 seconds.
+Bari 375: 25.52281
+Simulation complete. Time taken: 75.141594 seconds.
+Bari 376: 25.52996
+Simulation complete. Time taken: 75.334924 seconds.
+Bari 377: 25.53921
+Simulation complete. Time taken: 75.528054 seconds.
+Bari 378: 25.54736
+Simulation complete. Time taken: 75.721376 seconds.
+Bari 379: 25.55714
+Simulation complete. Time taken: 75.914601 seconds.
+Bari 380: 25.56560
+Simulation complete. Time taken: 76.107672 seconds.
+Bari 381: 25.57404
+Simulation complete. Time taken: 76.300759 seconds.
+Bari 382: 25.58257
+Simulation complete. Time taken: 76.493896 seconds.
+Bari 383: 25.59145
+Simulation complete. Time taken: 76.687255 seconds.
+Bari 384: 25.59998
+Simulation complete. Time taken: 76.880402 seconds.
+Bari 385: 25.60869
+Simulation complete. Time taken: 77.073761 seconds.
+Bari 386: 25.61648
+Simulation complete. Time taken: 77.267018 seconds.
+Bari 387: 25.62621
+Simulation complete. Time taken: 77.460787 seconds.
+Bari 388: 25.63459
+Simulation complete. Time taken: 77.653850 seconds.
+Bari 389: 25.64322
+Simulation complete. Time taken: 77.847194 seconds.
+Bari 390: 25.65280
+Simulation complete. Time taken: 78.040290 seconds.
+Bari 391: 25.66111
+Simulation complete. Time taken: 78.233369 seconds.
+Bari 392: 25.66902
+Simulation complete. Time taken: 78.426468 seconds.
+Bari 393: 25.67791
+Simulation complete. Time taken: 78.619532 seconds.
+Bari 394: 25.68613
+Simulation complete. Time taken: 78.812932 seconds.
+Bari 395: 25.69393
+Simulation complete. Time taken: 79.006115 seconds.
+Bari 396: 25.70247
+Simulation complete. Time taken: 79.199374 seconds.
+Bari 397: 25.71189
+Simulation complete. Time taken: 79.392534 seconds.
+Bari 398: 25.71951
+Simulation complete. Time taken: 79.585608 seconds.
+Bari 399: 25.72804
+Simulation complete. Time taken: 79.778925 seconds.
+Bari 400: 25.73613
+Simulation complete. Time taken: 79.971992 seconds.
+Bari 401: 25.74611
+Simulation complete. Time taken: 80.165259 seconds.
+Bari 402: 25.75524
+Simulation complete. Time taken: 80.358364 seconds.
+Bari 403: 25.76357
+Simulation complete. Time taken: 80.554885 seconds.
+Bari 404: 25.77213
+Simulation complete. Time taken: 80.747899 seconds.
+Bari 405: 25.78027
+Simulation complete. Time taken: 80.941186 seconds.
+Bari 406: 25.78861
+Simulation complete. Time taken: 81.134318 seconds.
+Bari 407: 25.79671
+Simulation complete. Time taken: 81.329063 seconds.
+Bari 408: 25.80473
+Simulation complete. Time taken: 81.522228 seconds.
+Bari 409: 25.81308
+Simulation complete. Time taken: 81.715172 seconds.
+Bari 410: 25.82237
+Simulation complete. Time taken: 81.908451 seconds.
+Bari 411: 25.83088
+Simulation complete. Time taken: 82.101689 seconds.
+Bari 412: 25.83963
+Simulation complete. Time taken: 82.294641 seconds.
+Bari 413: 25.84774
+Simulation complete. Time taken: 82.487641 seconds.
+Bari 414: 25.85489
+Simulation complete. Time taken: 82.680596 seconds.
+Bari 415: 25.86340
+Simulation complete. Time taken: 82.873811 seconds.
+Bari 416: 25.87159
+Simulation complete. Time taken: 83.066786 seconds.
+Bari 417: 25.87977
+Simulation complete. Time taken: 83.259714 seconds.
+Bari 418: 25.88858
+Simulation complete. Time taken: 83.454653 seconds.
+Bari 419: 25.89683
+Simulation complete. Time taken: 83.648786 seconds.
+Bari 420: 25.90552
+Simulation complete. Time taken: 83.841973 seconds.
+Bari 421: 25.91381
+Simulation complete. Time taken: 84.035007 seconds.
+Bari 422: 25.92211
+Simulation complete. Time taken: 84.228003 seconds.
+Bari 423: 25.93055
+Simulation complete. Time taken: 84.421105 seconds.
+Bari 424: 25.93852
+Simulation complete. Time taken: 84.614001 seconds.
+Bari 425: 25.94680
+Simulation complete. Time taken: 84.806925 seconds.
+Bari 426: 25.95493
+Simulation complete. Time taken: 85.000040 seconds.
+Bari 427: 25.96300
+Simulation complete. Time taken: 85.192991 seconds.
+Bari 428: 25.97260
+Simulation complete. Time taken: 85.385882 seconds.
+Bari 429: 25.97999
+Simulation complete. Time taken: 85.578786 seconds.
+Bari 430: 25.98879
+Simulation complete. Time taken: 85.771647 seconds.
+Bari 431: 25.99601
+Simulation complete. Time taken: 85.964837 seconds.
+Bari 432: 26.00437
+Simulation complete. Time taken: 86.157840 seconds.
+Bari 433: 26.01162
+Simulation complete. Time taken: 86.350734 seconds.
+Bari 434: 26.02025
+Simulation complete. Time taken: 86.543652 seconds.
+Bari 435: 26.02675
+Simulation complete. Time taken: 86.736536 seconds.
+Bari 436: 26.03553
+Simulation complete. Time taken: 86.929681 seconds.
+Bari 437: 26.04398
+Simulation complete. Time taken: 87.122620 seconds.
+Bari 438: 26.05210
+Simulation complete. Time taken: 87.315492 seconds.
+Bari 439: 26.05985
+Simulation complete. Time taken: 87.508612 seconds.
+Bari 440: 26.06850
+Simulation complete. Time taken: 87.701473 seconds.
+Bari 441: 26.07510
+Simulation complete. Time taken: 87.894339 seconds.
+Bari 442: 26.08340
+Simulation complete. Time taken: 88.088209 seconds.
+Bari 443: 26.09208
+Simulation complete. Time taken: 88.281150 seconds.
+Bari 444: 26.09865
+Simulation complete. Time taken: 88.474077 seconds.
+Bari 445: 26.10770
+Simulation complete. Time taken: 88.667721 seconds.
+Bari 446: 26.11500
+Simulation complete. Time taken: 88.861540 seconds.
+Bari 447: 26.12332
+Simulation complete. Time taken: 89.059987 seconds.
+Bari 448: 26.13087
+Simulation complete. Time taken: 89.255010 seconds.
+Bari 449: 26.13871
+Simulation complete. Time taken: 89.449572 seconds.
+Bari 450: 26.14633
+Simulation complete. Time taken: 89.643417 seconds.
+Bari 451: 26.15501
+Simulation complete. Time taken: 89.841089 seconds.
+Bari 452: 26.16290
+Simulation complete. Time taken: 90.038653 seconds.
+Bari 453: 26.17011
+Simulation complete. Time taken: 90.233215 seconds.
+Bari 454: 26.17846
+Simulation complete. Time taken: 90.428982 seconds.
+Bari 455: 26.18641
+Simulation complete. Time taken: 90.630138 seconds.
+Bari 456: 26.19433
+Simulation complete. Time taken: 90.830831 seconds.
+Bari 457: 26.20226
+Simulation complete. Time taken: 91.030123 seconds.
+Bari 458: 26.20929
+Simulation complete. Time taken: 91.223483 seconds.
+Bari 459: 26.21821
+Simulation complete. Time taken: 91.422811 seconds.
+Bari 460: 26.22650
+Simulation complete. Time taken: 91.618366 seconds.
+Bari 461: 26.23332
+Simulation complete. Time taken: 91.814027 seconds.
+Bari 462: 26.24202
+Simulation complete. Time taken: 92.006872 seconds.
+Bari 463: 26.24915
+Simulation complete. Time taken: 92.200312 seconds.
+Bari 464: 26.25635
+Simulation complete. Time taken: 92.394368 seconds.
+Bari 465: 26.26428
+Simulation complete. Time taken: 92.588698 seconds.
+Bari 466: 26.27278
+Simulation complete. Time taken: 92.781518 seconds.
+Bari 467: 26.28000
+Simulation complete. Time taken: 92.974419 seconds.
+Bari 468: 26.28726
+Simulation complete. Time taken: 93.167502 seconds.
+Bari 469: 26.29548
+Simulation complete. Time taken: 93.360341 seconds.
+Bari 470: 26.30392
+Simulation complete. Time taken: 93.553157 seconds.
+Bari 471: 26.31202
+Simulation complete. Time taken: 93.746156 seconds.
+Bari 472: 26.31883
+Simulation complete. Time taken: 93.938978 seconds.
+Bari 473: 26.32634
+Simulation complete. Time taken: 94.132042 seconds.
+Bari 474: 26.33547
+Simulation complete. Time taken: 94.324878 seconds.
+Bari 475: 26.34272
+Simulation complete. Time taken: 94.517642 seconds.
+Bari 476: 26.34937
+Simulation complete. Time taken: 94.710420 seconds.
+Bari 477: 26.35829
+Simulation complete. Time taken: 94.903192 seconds.
+Bari 478: 26.36565
+Simulation complete. Time taken: 95.095914 seconds.
+Bari 479: 26.37195
+Simulation complete. Time taken: 95.288903 seconds.
+Bari 480: 26.38082
+Simulation complete. Time taken: 95.481820 seconds.
+Bari 481: 26.38809
+Simulation complete. Time taken: 95.674747 seconds.
+Bari 482: 26.39530
+Simulation complete. Time taken: 95.867522 seconds.
+Bari 483: 26.40318
+Simulation complete. Time taken: 96.060320 seconds.
+Bari 484: 26.41109
+Simulation complete. Time taken: 96.253283 seconds.
+Bari 485: 26.41955
+Simulation complete. Time taken: 96.446034 seconds.
+Bari 486: 26.42685
+Simulation complete. Time taken: 96.638764 seconds.
+Bari 487: 26.43466
+Simulation complete. Time taken: 96.831652 seconds.
+Bari 488: 26.44232
+Simulation complete. Time taken: 97.024413 seconds.
+Bari 489: 26.45055
+Simulation complete. Time taken: 97.217375 seconds.
+Bari 490: 26.45748
+Simulation complete. Time taken: 97.410083 seconds.
+Bari 491: 26.46501
+Simulation complete. Time taken: 97.602758 seconds.
+Bari 492: 26.47258
+Simulation complete. Time taken: 97.795435 seconds.
+Bari 493: 26.47980
+Simulation complete. Time taken: 97.988149 seconds.
+Bari 494: 26.48671
+Simulation complete. Time taken: 98.181099 seconds.
+Bari 495: 26.49428
+Simulation complete. Time taken: 98.373807 seconds.
+Bari 496: 26.50196
+Simulation complete. Time taken: 98.566713 seconds.
+Bari 497: 26.50902
+Simulation complete. Time taken: 98.759389 seconds.
+Bari 498: 26.51635
+Simulation complete. Time taken: 98.952180 seconds.
+Bari 499: 26.52390
+Simulation complete. Time taken: 99.145087 seconds.
