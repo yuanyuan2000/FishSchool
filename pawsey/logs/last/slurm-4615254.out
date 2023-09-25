@@ -1,0 +1,17 @@
+Thread 0 reporting with iteration 0!
+Thread 0 reporting with iteration 1!
+Thread 0 reporting with iteration 2!
+Thread 0 reporting with iteration 3!
+Thread 1 reporting with iteration 4!
+Thread 1 reporting with iteration 5!
+Thread 1 reporting with iteration 6!
+Thread 1 reporting with iteration 7!
+Thread 2 reporting with iteration 8!
+Thread 2 reporting with iteration 9!
+Thread 2 reporting with iteration 10!
+Thread 2 reporting with iteration 11!
+Thread 3 reporting with iteration 12!
+Thread 3 reporting with iteration 13!
+Thread 3 reporting with iteration 14!
+Thread 3 reporting with iteration 15!
+Simulation step. Time taken: 30.022535 seconds.

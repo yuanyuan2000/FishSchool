@@ -26,17 +26,6 @@ int main()
 {
     omp_set_num_threads(MAX_THREAD); // Set the number of threads
 
-#pragma omp parallel for ordered
-    for (int i = 0; i < 10; ++i)
-    {
-#pragma omp ordered
-        {
-            printf("Thread %d reporting with iteration %d!\n", omp_get_thread_num(), i);
-        }
-    }
-
-    //    FILE *fp;
-    //    fp = fopen("results1.txt", "w");
     srand(time(0));
 
     struct Fish *fishes = (struct Fish *)malloc(sizeof(struct Fish) * NUM_FISH);
@@ -82,8 +71,6 @@ int main()
             }
         }
 
-#pragma omp barrier // Wait for all threads to finish
-
         float total_distance_weighted = 0.0;
         float total_distance = 0.0;
 
@@ -107,17 +94,13 @@ int main()
             total_distance += curr_distance;
         }
 
-#pragma omp barrier // Wait for all threads to finish
-
         float barycentre = total_distance_weighted / total_distance;
-        printf("Bari %d: %.5f\n", t, barycentre);
-
-        double end = omp_get_wtime();
-
-        double cpu_time_used = ((double)(end - start));
-        //	fprintf(fp, "%d, %f\n", t, cpu_time_used); // Changed from SIMULATION_STEPS to t
-        printf("Simulation step. Time taken: %f seconds.\n", cpu_time_used);
+        // printf("Bari %d: %.5f\n", t, barycentre);
     }
+    double end = omp_get_wtime();
+
+    double cpu_time_used = ((double)(end - start));
+    printf("Simulation step. Time taken: %f seconds.\n", cpu_time_used);
 
     free(fishes); // Free the allocated memory
     return 0;

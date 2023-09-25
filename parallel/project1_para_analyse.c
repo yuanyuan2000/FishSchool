@@ -43,6 +43,8 @@ int main()
         fishes[i].weight = INIT_WEIGHT;
     }
 
+    start = omp_get_wtime();
+
     // Simulation
     for (int t = 0; t < SIMULATION_STEPS; t++)
     {
@@ -50,7 +52,8 @@ int main()
         unsigned int seed;
 
         // Time measurement for first computation-intensive block
-        start = omp_get_wtime();
+        // start = omp_get_wtime();
+// #pragma omp parallel for schedule(static, 131072) private(seed) reduction(max : max_delta_f)
 #pragma omp parallel for private(seed) reduction(max : max_delta_f)
         for (int i = 0; i < NUM_FISH; i++)
         {
@@ -73,14 +76,15 @@ int main()
             }
         }
 
-        end = omp_get_wtime();
-        printf("Time for the first block: %f seconds.\n", end - start);
+        // end = omp_get_wtime();
+        // printf("Time for the first block: %f seconds.\n", end - start);
 
         float total_distance_weighted = 0.0;
         float total_distance = 0.0;
 
         // Time measurement for second computation-intensive block
-        start = omp_get_wtime();
+        // start = omp_get_wtime();
+// #pragma omp parallel for schedule(static, 131072) reduction(+ : total_distance_weighted, total_distance)
 #pragma omp parallel for reduction(+ : total_distance_weighted, total_distance)
         for (int i = 0; i < NUM_FISH; i++)
         {
@@ -99,12 +103,15 @@ int main()
             total_distance_weighted += curr_distance * fishes[i].weight;
             total_distance += curr_distance;
         }
-        end = omp_get_wtime();
-        printf("Time for the second block: %f seconds.\n", end - start);
+        // end = omp_get_wtime();
+        // printf("Time for the second block: %f seconds.\n", end - start);
 
         float barycentre = total_distance_weighted / total_distance;
-        printf("Barycentre at %d: %.5f\n", t, barycentre);
+        // printf("Barycentre at %d: %.5f\n", t, barycentre);
     }
+
+    end = omp_get_wtime();
+    printf("Simulation step. Time taken: %f seconds.\n", end - start);
 
     free(fishes); // Free the allocated memory
     return 0;

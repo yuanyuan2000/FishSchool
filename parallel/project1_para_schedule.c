@@ -11,6 +11,8 @@
 #define MIN_FISH_Y -MAX_FISH_Y
 #define INIT_WEIGHT 10
 #define SIMULATION_STEPS 500
+#define MAX_THREAD 16
+#define FISH_PER_THREAD NUM_FISH / MAX_THREAD
 
 struct Fish
 {
@@ -24,6 +26,8 @@ struct Fish
 
 int main()
 {
+    omp_set_num_threads(MAX_THREAD); // Set the number of threads
+
     double start, end;
 
     srand(time(0));
@@ -50,7 +54,8 @@ int main()
 
         // Time measurement for first computation-intensive block
         // start = omp_get_wtime();
-// #pragma omp parallel for schedule(static, 131072) private(seed) reduction(max : max_delta_f)
+// #pragma omp parallel for schedule(static, FISH_PER_THREAD) private(seed) reduction(max : max_delta_f)
+// #pragma omp parallel for schedule(guided) private(seed) reduction(max : max_delta_f)
 #pragma omp parallel for private(seed) reduction(max : max_delta_f)
         for (int i = 0; i < NUM_FISH; i++)
         {
@@ -81,7 +86,8 @@ int main()
 
         // Time measurement for second computation-intensive block
         // start = omp_get_wtime();
-// #pragma omp parallel for schedule(static, 131072) reduction(+ : total_distance_weighted, total_distance)
+// #pragma omp parallel for schedule(static, FISH_PER_THREAD) reduction(+ : total_distance_weighted, total_distance)
+// #pragma omp parallel for schedule(guided) reduction(+ : total_distance_weighted, total_distance)
 #pragma omp parallel for reduction(+ : total_distance_weighted, total_distance)
         for (int i = 0; i < NUM_FISH; i++)
         {
