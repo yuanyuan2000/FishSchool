@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include <time.h>
+#include <string.h>
 #include <omp.h> // Include the OpenMP header
 
 #define NUM_FISH 4194304
@@ -12,7 +13,7 @@
 #define INIT_WEIGHT 10
 #define SIMULATION_STEPS 500
 #define MAX_THREAD 16
-#define FISH_PER_THREAD (NUM_FISH / MAX_THREAD)
+#define FISH_PER_THREAD 150000
 
 struct Fish
 {
@@ -77,6 +78,81 @@ float phaseTwoBase(struct Fish *fishes, float max_delta_f)
         total_distance += curr_distance;
     }
 
+    return total_distance_weighted / total_distance;
+}
+
+float phaseOneBaseOPT(struct Fish *fishes)
+{
+    float max_delta_f = -99999.0;
+    unsigned int seed;
+
+#pragma omp parallel private(seed) reduction(max : max_delta_f)
+    {
+        seed = 123456789 + omp_get_thread_num(); // Initialize seed for each thread
+        struct Fish *fishesCurrThread = (struct Fish *)malloc(sizeof(struct Fish) * FISH_PER_THREAD);
+        memcpy(fishesCurrThread, fishes + omp_get_thread_num() * FISH_PER_THREAD, sizeof(struct Fish) * FISH_PER_THREAD);
+
+#pragma omp for
+        for (int i = 0; i < MAX_THREAD; i++)
+        {
+            for (int j = 0; j < FISH_PER_THREAD; j++)
+            {
+                fishesCurrThread[j].plan_x = fishesCurrThread[j].x + ((float)rand_r(&seed) / RAND_MAX) * 0.2 - 0.1;
+                fishesCurrThread[j].plan_y = fishesCurrThread[j].y + ((float)rand_r(&seed) / RAND_MAX) * 0.2 - 0.1;
+                if (fishesCurrThread[j].plan_x > MAX_FISH_X)
+                    fishesCurrThread[j].plan_x = MAX_FISH_X;
+                if (fishesCurrThread[j].plan_x < MIN_FISH_X)
+                    fishesCurrThread[j].plan_x = MIN_FISH_X;
+                if (fishesCurrThread[j].plan_y > MAX_FISH_Y)
+                    fishesCurrThread[j].plan_y = MAX_FISH_Y;
+                if (fishesCurrThread[j].plan_y < MIN_FISH_Y)
+                    fishesCurrThread[j].plan_y = MIN_FISH_Y;
+
+                fishesCurrThread[j].delta_f = sqrt(fishesCurrThread[j].plan_x * fishesCurrThread[j].plan_x + fishesCurrThread[j].plan_y * fishesCurrThread[j].plan_y) - sqrt(fishesCurrThread[j].x * fishesCurrThread[j].x + fishesCurrThread[j].y * fishesCurrThread[j].y);
+                if (fishesCurrThread[j].delta_f > max_delta_f)
+                {
+                    max_delta_f = fishesCurrThread[j].delta_f;
+                }
+            }
+        }
+        free(fishesCurrThread);
+    }
+    return max_delta_f;
+}
+
+float phaseTwoBaseOPT(struct Fish *fishes, float max_delta_f)
+{
+    float total_distance_weighted = 0.0;
+    float total_distance = 0.0;
+
+#pragma omp parallel reduction(+ : total_distance_weighted, total_distance)
+    {
+        struct Fish *fishesCurrThread = (struct Fish *)malloc(sizeof(struct Fish) * FISH_PER_THREAD);
+        memcpy(fishesCurrThread, fishes + omp_get_thread_num() * FISH_PER_THREAD, sizeof(struct Fish) * FISH_PER_THREAD);
+
+#pragma omp for
+        for (int i = 0; i < MAX_THREAD; i++)
+        {
+            for (int j = 0; j < FISH_PER_THREAD; j++)
+            {
+                float planWeight = fishesCurrThread[j].weight + fishesCurrThread[j].delta_f / max_delta_f;
+                if (planWeight > 2 * INIT_WEIGHT)
+                {
+                    fishesCurrThread[j].weight = 2 * INIT_WEIGHT;
+                }
+                if (planWeight > fishesCurrThread[j].weight)
+                {
+                    fishesCurrThread[j].x = fishesCurrThread[j].plan_x;
+                    fishesCurrThread[j].y = fishesCurrThread[j].plan_y;
+                    fishesCurrThread[j].weight = planWeight;
+                }
+                float curr_distance = sqrt(fishesCurrThread[j].x * fishesCurrThread[j].x + fishesCurrThread[j].y * fishesCurrThread[j].y);
+                total_distance_weighted += curr_distance * fishesCurrThread[j].weight;
+                total_distance += curr_distance;
+            }
+        }
+        free(fishesCurrThread);
+    }
     return total_distance_weighted / total_distance;
 }
 
@@ -384,6 +460,9 @@ int main(int argc, char *argv[])
 
     struct Fish *fishes = (struct Fish *)malloc(sizeof(struct Fish) * NUM_FISH);
 
+    //
+    struct Fish *fishesCache;
+
     switch (option)
     {
     case 1:
@@ -441,7 +520,17 @@ int main(int argc, char *argv[])
         end = omp_get_wtime();
         printf("Guided configuration simulation step. Time taken: %f seconds.\n", end - start);
         break;
-
+    case 6:
+        initFish(fishes);
+        // Simulation for base configuration
+        start = omp_get_wtime();
+        for (int t = 0; t < SIMULATION_STEPS; t++)
+        {
+            float barycentreBase = phaseTwoBaseOPT(fishes, phaseOneBaseOPT(fishes));
+        }
+        end = omp_get_wtime();
+        printf("Base configuration simulation step. Time taken: %f seconds.\n", end - start);
+        break;
     default:
         break;
     }
