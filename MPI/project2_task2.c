@@ -6,14 +6,14 @@
 #include <omp.h>
 #include <mpi.h>
 
-#define NUM_FISH 65536
+#define NUM_FISH 262144
 #define MAX_FISH_X 100
 #define MAX_FISH_Y 100
 #define MIN_FISH_X -MAX_FISH_X
 #define MIN_FISH_Y -MAX_FISH_Y
 #define INIT_WEIGHT 10
 #define SIMULATION_STEPS 500
-#define MAX_THREAD 2
+#define MAX_THREAD 3
 #define FISH_PER_THREAD 10000
 
 struct Fish
@@ -455,9 +455,15 @@ void initFish(struct Fish *fishes)
 int main(int argc, char *argv[])
 {
     int option = atoi(argv[1]);
-    omp_set_num_threads(MAX_THREAD); // Set the number of threads
 
-    MPI_Init(&argc, &argv);
+    int provided;
+    MPI_Init_thread(&argc, &argv, MPI_THREAD_FUNNELED, &provided);
+    if (provided < MPI_THREAD_FUNNELED) {
+        printf("MPI does not provide the required thread support!\n");
+        MPI_Abort(MPI_COMM_WORLD, EXIT_FAILURE);
+    }
+
+    omp_set_num_threads(MAX_THREAD); // Set the number of threads
 
     int process_id, number_of_processes;
     MPI_Comm_rank(MPI_COMM_WORLD, &process_id);
