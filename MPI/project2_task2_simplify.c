@@ -5,7 +5,7 @@
 #include <string.h>
 #include <mpi.h>
 
-#define NUM_FISH 262144
+#define NUM_FISH 4194304
 #define MAX_FISH_X 100
 #define MAX_FISH_Y 100
 #define MIN_FISH_X -MAX_FISH_X

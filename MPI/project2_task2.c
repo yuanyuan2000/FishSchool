@@ -6,14 +6,14 @@
 #include <omp.h>
 #include <mpi.h>
 
-#define NUM_FISH 262144
+#define NUM_FISH 4194304
 #define MAX_FISH_X 100
 #define MAX_FISH_Y 100
 #define MIN_FISH_X -MAX_FISH_X
 #define MIN_FISH_Y -MAX_FISH_Y
 #define INIT_WEIGHT 10
 #define SIMULATION_STEPS 500
-#define MAX_THREAD 3
+#define MAX_THREAD 1
 #define FISH_PER_THREAD 10000
 
 struct Fish
@@ -543,7 +543,7 @@ int main(int argc, char *argv[])
         break;
     case 6:
         // Simulation for base configuration
-        if (process_id == 0) printf("Base configuration simulation.\n");
+        if (process_id == 0) printf("Base OPT configuration simulation.\n");
         for (int t = 0; t < SIMULATION_STEPS; t++)
         {
             local_max_delta_f = phaseOneBaseOPT(local_fishes);

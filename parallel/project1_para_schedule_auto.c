@@ -12,8 +12,8 @@
 #define MIN_FISH_Y -MAX_FISH_Y
 #define INIT_WEIGHT 10
 #define SIMULATION_STEPS 500
-#define MAX_THREAD 16
-#define FISH_PER_THREAD 150000
+#define MAX_THREAD 1
+#define FISH_PER_THREAD 10000
 
 struct Fish
 {
@@ -529,7 +529,7 @@ int main(int argc, char *argv[])
             float barycentreBase = phaseTwoBaseOPT(fishes, phaseOneBaseOPT(fishes));
         }
         end = omp_get_wtime();
-        printf("Base configuration simulation step. Time taken: %f seconds.\n", end - start);
+        printf("Base OPT configuration simulation step. Time taken: %f seconds.\n", end - start);
         break;
     default:
         break;
