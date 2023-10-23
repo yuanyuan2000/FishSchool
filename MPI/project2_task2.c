@@ -535,16 +535,16 @@ int main(int argc, char *argv[])
             phaseTwoGuided(local_fishes, global_max_delta_f);
         }     
         break;
-    // case 6:
-    //     // Simulation for base configuration
-    //     if (process_id == 0) printf("Base configuration simulation.\n");
-    //     for (int t = 0; t < SIMULATION_STEPS; t++)
-    //     {
-    //         local_max_delta_f = phaseOneBaseOPT(local_fishes);
-    //         MPI_Allreduce(&local_max_delta_f, &global_max_delta_f, 1, MPI_FLOAT, MPI_MAX, MPI_COMM_WORLD);
-    //         phaseTwoBaseOPT(local_fishes, global_max_delta_f);
-    //     }
-    //     break;
+    case 6:
+        // Simulation for base configuration
+        if (process_id == 0) printf("Base configuration simulation.\n");
+        for (int t = 0; t < SIMULATION_STEPS; t++)
+        {
+            local_max_delta_f = phaseOneBaseOPT(local_fishes);
+            MPI_Allreduce(&local_max_delta_f, &global_max_delta_f, 1, MPI_FLOAT, MPI_MAX, MPI_COMM_WORLD);
+            phaseTwoBaseOPT(local_fishes, global_max_delta_f);
+        }
+        break;
     default:
         break;
     }

@@ -4,6 +4,7 @@
 #include <time.h>
 #include <string.h>
 #include <omp.h> // Include the OpenMP header
+#include <mpi.h>
 
 #define NUM_FISH 262144
 #define MAX_FISH_X 100
